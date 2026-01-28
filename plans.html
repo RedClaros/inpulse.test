@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans - InPulse</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="pagestyles.css">
+    <link rel="stylesheet" href="plans.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="bg-shape shape1"></div><div class="bg-shape shape2"></div>
+
+        <header class="landing-header">
+            <div class="header-content">
+                <a href="landing.html" class="logo">InPulse</a>
+                <nav class="main-nav">
+                    <a href="account.html">Create Account</a>
+                    <a href="login.html" class="btn btn-secondary">Sign In</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content-main">
+            <div class="plans-header">
+                <h1>Find the right plan for your business</h1>
+                <p>Start for free, then upgrade as you grow. Choose the plan that's right for you.</p>
+            </div>
+
+            <div class="billing-toggle-container">
+                <span>Monthly</span>
+                <label class="billing-toggle">
+                    <input type="checkbox" id="billing-cycle-checkbox" title="Monthly billing option">
+                    <span class="slider"></span>
+                </label>
+                <span>Annually (Save 17%)</span>
+            </div>
+
+            <div class="plans-container">
+                <!-- Free Plan -->
+                <div class="plan-card" data-monthly-price="0" data-annual-price="0">
+                    <h3>Free</h3>
+                    <p class="price"><span>$0</span> <span class="price-period">/ month</span></p>
+                    <p class="plan-description">For individuals getting started.</p>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> 1 User</li>
+                        <li><i data-lucide="check"></i> Basic To-Do List</li>
+                        <li><i data-lucide="check"></i> 3 Social Integrations</li>
+                        <li><i data-lucide="check"></i> Email Support</li>
+                        <li><i data-lucide="minus"></i> AI Forecasting</li>
+                        <li><i data-lucide="minus"></i> Team Organization</li>
+                        <li><i data-lucide="minus"></i> E-commerce Integrations</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary plan-btn">Get Started</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="plan-card" data-monthly-price="29" data-annual-price="290">
+                    <h3>Pro</h3>
+                    <p class="price"><span>$29</span> <span class="price-period">/ month</span></p>
+                    <p class="plan-description">For small teams and freelancers.</p>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> Up to 5 Users</li>
+                        <li><i data-lucide="check"></i> Full Kanban Board</li>
+                        <li><i data-lucide="check"></i> 10 Social Integrations</li>
+                        <li><i data-lucide="check"></i> 2 E-commerce Integration</li>
+                        <li><i data-lucide="check"></i> Email Support</li>
+                        <li><i data-lucide="check"></i> Basic AI Forecasting</li>
+                        <li><i data-lucide="minus"></i> Team Organization</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary plan-btn">Choose Pro</a>
+                </div>
+
+                <!-- Pro+ Plan (Highlighted) -->
+                <div class="plan-card featured" data-monthly-price="39" data-annual-price="390">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Pro+</h3>
+                    <p class="price"><span>$39</span> <span class="price-period">/ month</span></p>
+                    <p class="plan-description">For growing businesses that need AI power.</p>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> Up to 10 Users</li>
+                        <li><i data-lucide="check"></i> Full Kanban Board & Roles</li>
+                        <li><i data-lucide="check"></i> 25 Social Integrations</li>
+                        <li><i data-lucide="check"></i> 5 E-commerce Integrations</li>
+                        <li><i data-lucide="check"></i> Advanced Insights & AI Forecasting</li>
+                        <li><i data-lucide="check"></i> Priority Email Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary plan-btn">Choose Pro+</a>
+                </div>
+
+                <!-- Ultra Plan -->
+                <div class="plan-card" data-monthly-price="49" data-annual-price="490">
+                    <h3>Ultra</h3>
+                    <p class="price"><span>$49</span> <span class="price-period">/ month</span></p>
+                    <p class="plan-description">For larger teams and agencies.</p>
+                    <ul class="features-list">
+                        <li><i data-lucide="check"></i> Unlimited Users</li>
+                        <li><i data-lucide="check"></i> All Pro+ features</li>
+                        <li><i data-lucide="check"></i> Unlimited Social Integrations</li>
+                        <li><i data-lucide="check"></i> Unlimited E-commerce Integrations</li>
+                        <li><i data-lucide="check"></i> Advanced AI Features</li>
+                        <li><i data-lucide="check"></i> Dedicated Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary plan-btn">Choose Ultra</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="plans.js"></script>
+</body>
+</html>
